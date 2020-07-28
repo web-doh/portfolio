@@ -18,14 +18,16 @@ navbarMenu.addEventListener('click',()=>{
     if (target == null){
         return;
     }
-    const scrollTo = document.querySelector(target);
-    scrollTo.scrollIntoView({ behavior: 'smooth'});
+    scrollIntoView(target);
 });
 
 // Scroll to section (when tapping on the contact button)
 const homeContact = document.querySelector('.home__contact');
 homeContact.addEventListener('click',()=>{
-    const target = event.target.dataset.link;
-    const scrollTo = document.querySelector(target);
-    scrollTo.scrollIntoView();
+    scrollIntoView('#contact')
 });
+
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({ behavior: 'smooth'});
+}
