@@ -61,6 +61,7 @@ button {
     border: none;
     outline: none;
 }
+
 /* Section common */
 .section {
     text-align: center;
@@ -105,12 +106,21 @@ p {
 /* Navbar */
 #navbar {
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-purple);
+    background-color: transparent;
     color: var(--color-white);
     padding: 16px;
+    z-index: 1;
+    transition: all var(--animation-duration) ease-in;
 }
+#navbar.navbar__color{
+    background-color: var(--color-purple);
+    padding: 8px;
+}
+
 .icon {     
     width: 32px;        
     height: 32px;  
@@ -152,9 +162,10 @@ p {
 /* Home */
 #home {
     background: center/cover no-repeat 
-                url(imgs/home-background.png) ;
+                url(imgs/home-background.png);
     text-align: center;
-    padding: 40px;
+    padding: 50px;
+    padding-top: 120px;
       }
 .home__avatar {
     width: 240px;
