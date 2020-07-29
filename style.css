@@ -193,6 +193,8 @@ p {
     transition: all var(--animation-duration) ease;
 }
 
+
+
 /* About */
 .about__majors {
     display: flex;
@@ -267,6 +269,7 @@ p {
 
 /* Skill */
 #skills {
+    padding: 50px 80px;
     background-color: var(--color-green);
 }
 .skillset{
@@ -341,7 +344,6 @@ p {
 .category__btn.active .category__count,
 .category__btn:hover .category__count {
     opacity: 1;
-    
     left:8px;
     transition: all var(--animation-duration) linear;
 }
@@ -464,8 +466,8 @@ p {
 
 /* Contact */
 #contact {
-    background-color: var(--color-purple);
-    }
+    background-color: var(--color-purple);    
+}
 .contact__title, 
 .contact__email,
 .contact__rights {
@@ -492,6 +494,31 @@ color: var(--color-white);
     transform: scale(1.1);
     cursor: pointer;
 }
+
+/* Arrow button */
+.arrow-up i{
+    position: fixed;
+    right: 2.5vw;
+    bottom: 30px;
+    color: var(--color-orange);
+    font-size: var(--font-large);
+    padding: 0;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--animation-duration) ease;
+}
+
+.arrow-up i:hover{
+    color: var(--color-grey);
+    cursor: pointer;
+}
+
+.arrow-up.visible i{
+    opacity :1;
+    pointer-events: auto;
+}
+
 
 /* Media Query for below w768 */
 @media screen and (max-width: 768px) {
