@@ -50,6 +50,31 @@ arrowUp.addEventListener('click', ()=>{
 scrollIntoView('#home');
 });
 
+//Projects filtering animation
+const workCategories = document.querySelector('.work__categories');
+const projects = document.querySelectorAll('.project');
+const projectsContainer = document.querySelector('.work__projects');
+
+workCategories.addEventListener('click', (event) => {
+    const filter = event.target.dataset.select || event.target.parentNode.dataset.select;
+    if (filter == null){
+        return;
+    };
+    projectsContainer.classList.add('anim__effect');
+  
+   setTimeout(()=>{  
+    projects.forEach((project)=>{
+        if (filter === '*' || filter === project.id){
+            project.classList.remove('hide');
+        }else {
+            project.classList.add('hide');
+        }
+    });
+    projectsContainer.classList.remove('anim__effect');
+   },300);
+    });
+
+
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
