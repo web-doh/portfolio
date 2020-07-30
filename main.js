@@ -50,27 +50,35 @@ arrowUp.addEventListener('click', ()=>{
 scrollIntoView('#home');
 });
 
-//Projects filtering animation
+//Projects filtering
 const workCategories = document.querySelector('.work__categories');
 const projects = document.querySelectorAll('.project');
 const projectsContainer = document.querySelector('.work__projects');
 
 workCategories.addEventListener('click', (event) => {
-    const filter = event.target.dataset.select || event.target.parentNode.dataset.select;
+    const filter = event.target.dataset.filter || event.target.parentNode.dataset.filter;
     if (filter == null){
         return;
     };
+
+    //Remove selection from the previous one & select the new one
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target = 
+      event.target.nodeName === 'BUTTON'? event.target : event.target.parentNode;
+    target.classList.add('selected');
+   
+    //Animation
     projectsContainer.classList.add('anim__effect');
-  
-   setTimeout(()=>{  
-    projects.forEach((project)=>{
+    setTimeout(()=>{  
+      projects.forEach((project)=>{
         if (filter === '*' || filter === project.id){
             project.classList.remove('hide');
-        }else {
+        } else {
             project.classList.add('hide');
         }
     });
-    projectsContainer.classList.remove('anim__effect');
+      projectsContainer.classList.remove('anim__effect');
    },300);
     });
 
