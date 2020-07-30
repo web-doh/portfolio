@@ -18,8 +18,17 @@ navbarMenu.addEventListener('click',()=>{
     if (target == null){
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(target);
 });
+
+
+   // Open Navbar menu (when tapping on the toggle-btn)
+   const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+   navbarToggleBtn.addEventListener('click', (event)=>{
+       navbarMenu.classList.toggle('open');
+   });
+
 
 // Scroll to section (when tapping on the contact button)
 const homeContact = document.querySelector('.home__contact');
@@ -82,7 +91,8 @@ workCategories.addEventListener('click', (event) => {
    },300);
     });
 
-
+ 
+    
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
