@@ -131,12 +131,19 @@ p {
 
 .navbar__menu {
     display: flex;
+  
    }
 
 .navbar__logo{
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
-}   
+    display: flex;
+    align-items: center;
+}
+.navbar__logo a {
+    margin-left: 4px;
+}
+
 .navbar__menu__item {
     padding: 8px 12px;
     margin: 0 4px;
