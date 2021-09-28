@@ -1,318 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <meta name="description" content="Portfolio for starter software engineer Doh">
-    <meta name="author" content="doh">
-    <link rel="icon" type="image/png" href="imgs/favicon.png">
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></Script>
-</head>
+    <meta
+      name="description"
+      content="Portfolio for starter software engineer Doh"
+    />
+    <meta name="author" content="doh" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
 
-<body>
-    <!-- <Navbar> -->
+    <!-- font & icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- script -->
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
     <nav id="navbar">
+      <div class="navbar__container">
         <div class="navbar__logo">
-            <img class="icon" src="imgs/favicon.png" alt="personal logo" />
-            <a href="#">Doh</a>
+          <a href="#">김도원</a>
+          <!-- Toggle button -->
+          <button class="navbar__toggle-btn">
+            <i data-feather="menu"></i>
+          </button>
         </div>
-             <ul class="navbar__menu">
-                <li class="navbar__menu__item" data-link="#home">Home</li>
-                <li class="navbar__menu__item" data-link="#about">About</li>
-                <li class="navbar__menu__item" data-link="#skills">Skills</li>
-                <li class="navbar__menu__item" data-link="#work">My work</li>
-                <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
-                <li class="navbar__menu__item" data-link="#contact">Contact</li>
-            </ul>
-              <!-- Toggle button -->
-              <button class="navbar__toggle-btn">
-                <i class="fas fa-bars"></i>
-              </button>
-        </nav>
-             
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#work">Projects</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- Home -->
     <section id="home">
-       <div class="home__container">
+      <div class="home__container">
         <img src="imgs/profile.jpg" alt="profile photo" class="home__avatar" />
-        <h1 class="home__title">Hello,<br /> I'm a Starter Coder.</h1>
-        <h2 class="home__description">A Software Engineer currently residing in Seoul, South Korea.</h2>
-        <button class="home__contact" data-link="#contact">Contact Me</button>
-       </div>
+        <h2 class="home__title">안녕하세요,</h2>
+        <h3>
+          생활의 시스템을 바꿀 수 있는 웹 어플리케이션 제작에 관심이 많은
+          김도원입니다.
+        </h3>
+        <button class="home__contact" data-link="#contact">
+          <i data-feather="chevron-right"></i>
+          <span>Contact Me</span>
+        </button>
+      </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="section section__container" >
-        <h1>About me</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit odio asperiores,
-            quos labore omnis obcaecati officia fugit minima nobis dolorem, est magnam repellat error,
-            voluptatibus voluptatum expedita mollitia facere enim.
-        </p>
-        <div class="about__majors">
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <h2 class="major__title">Front-end</h2>
-                <p class="major__description">
-                    HTML, CSS, JavaScript, TypeScript,React, Vue, Web APIs
-                </p>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-mobile"></i>
-                </div>
-                <h2 class="major__title">Mobile</h2>
-                <p class="major__description">
-                    Android, iOS, React Native, Flutter, Java, Swift, Kotlin
-                </p>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-server"></i>
-                </div>
-                <h2 class="major__title">Back-end</h2>
-                <p class="major__description">
-                    Java, JavaScript, Go, NodeJS, Rest APIs, GraphGL
-                </p>
-            </div>
+    <section id="about" class="section section__container">
+      <h1 class="section__title">About</h1>
+      <p>
+        &nbsp;&nbsp; 저는 인간의 생활에 영향을 주는 일을 하고 싶어서 인테리어
+        디자이너로 활동했고, 소프트웨어의 작은 변화가 생활에 미칠 수 있는 큰
+        영향력에 매력을 느껴 소프트웨어 개발자로 전향하게 되었습니다. 개발자가
+        되기 위해 1년간 독학했고, 현재는 삼성 청년 소프트웨어 아카데미에서
+        교육을 받고 있습니다.
+      </p>
+      <p></p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">Client</h2>
+          <p class="major__description">
+            HTML, CSS, JavaScript, TypeScript, React
+          </p>
         </div>
-        <div class="about__jobs">
-            <div class="job">
-                <img src="imgs/jobs/yonsei logo.png" alt="yonsei logo" class="job__logo" />
-              <div class="job__decription">
-                <p class="job__name">Graduated from the dep.Clothing&Textiles </p>
-                <p class="job__period">FEB 2017</p>
-            </div>
-        </div>
-        <div class="job">
-            <img src="imgs/jobs/yonsei logo.png" alt="yonsei logo" class="job__logo" />
-          <div class="job__decription">
-            <p class="job__name">Graduated from the dep.InteriorArchitecture & Built </p>
-            <p class="job__period">FEB 2017</p>
-        </div>
-    </div>
-        </div>
-    </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-        <div class="section__container">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Expedita obcaecati, natus tenetur consequatur, et, officiis
-            ex earum porro ipsum sunt minus possimus soluta quis deserunt
-            at aspernatur dolorum architecto nostrum.
-        </p>
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">Skills</h3>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 99%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>CSS</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>JavaScript</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>TypeScript</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>React</span>
-                        <span>75%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>Node.js</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 70%"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>IntelliJ</span></li>
-                        <li><span>Android Studio Code</span></li>
-                        <li><span>iOS development tools</span></li>
-                        <li><span>Sketch app</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                    <h3 class="skillset__title">Etc</h3>
-                    <ul class="etc__list">
-                        <li><span>Git</span></li>
-                        <li><span>Photoshop</span></li>
-                        <li><span>Math</span></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">Server</h2>
+          <p class="major__description">
+            JavaScript, TypeScript, Node.js, Java
+          </p>
         </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <div class="job__description">
+            <div class="job__contents">
+              <p class="job__name">연세대학교 의류환경학·실내건축학 학사</p>
+              <p class="job__period">FEB 2017</p>
+            </div>
+            <div class="job__divider">·</div>
+          </div>
+
+          <div class="job__description">
+            <div class="job__contents">
+              <p class="job__name">AI 건축사사무소</p>
+              <p class="job__period">MAR 2017 - MAR 2018</p>
+            </div>
+            <div class="job__divider">·</div>
+          </div>
+
+          <div class="job__description">
+            <div class="job__contents">
+              <p class="job__name">Area plus</p>
+              <p class="job__period">MAR 2019 - MAY 2020</p>
+            </div>
+            <div class="job__divider">·</div>
+          </div>
+
+          <div class="job__description">
+            <div class="job__contents">
+              <p class="job__name">멋쟁이 사자처럼 직장인 - 해커톤 최우수상</p>
+              <p class="job__period">AUG 2020 - NOV 2020</p>
+            </div>
+            <div class="job__divider">·</div>
+          </div>
+
+          <div class="job__description">
+            <div class="job__contents">
+              <p class="job__name">삼성 청년 소프트웨어 아카데미 6기</p>
+              <p class="job__period">JULY 2021 -</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Work -->
     <section id="work" class="section">
-        <h1>My work</h1>
-        <h2>Projects</h2>
-        <div class="work__categories">
-            <button class="category__btn selected" data-filter="*">
-                All<span class="category__count">8</span></button>
-            <button class="category__btn" data-filter="front-end">
-                Front-end<span class="category__count">3</span></button>
-            <button class="category__btn" data-filter="back-end">
-                Back-end<span class="category__count">3</span></button>
-            <button class="category__btn" data-filter="mobile">
-                Mobile<span class="category__count">2</span></button>
-        </div>
+      <h1 class="section__title">Projects</h1>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">All</button>
+        <button class="category__btn" data-filter="personal">Personal</button>
+        <button class="category__btn" data-filter="team">Team</button>
+        <button class="category__btn" data-filter="practice">Practice</button>
+      </div>
 
-        <div class="work__projects">
-            <a href="https://github.com/web-doh/portfolio" class="project" id="front-end" target="blank">
-                <img src="imgs/projects/1.png" alt="Responsive Web" class="project__img">
-                <div class="project__description">
-                    <h3>Responsive Web Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-            <a href="https://github.com/web-doh/portfolio" class="project" id="front-end" target="blank">
-                <img src="imgs/projects/1.png" alt="Youtube" class="project__img">
-                <div class="project__description">
-                    <h3>Youtoube Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-            <a href="https://github.com/web-doh/portfolio" class="project" id="back-end" target="blank">
-                <img src="imgs/projects/navbar.png" alt="Network-communication" class="project__img">
-                <div class="project__description">
-                    <h3>Network-communication</h3>
-                    <span>Clone coding with Pjax</span>
-                </div>
-            </a>
-            <a href="https://github.com/web-doh/portfolio" class="project" id="back-end" target="blank">
-                <img src="imgs/projects/navbar.png" alt="Server" class="project__img">
-                <div class="project__description">
-                    <h3>Server</h3>
-                    <span>Server with JavaScript</span>
-                </div>
-            </a>
-            <a href="https://github.com/web-doh/portfolio" class="project" id="mobile" target="blank">
-                <img src="imgs/projects/iphone.png" alt="iOS Game" class="project__img">
-                <div class="project__description">
-                    <h3>iOS game</h3>
-                    <span>Clone coding with Swift</span>
-                </div>
-            </a>
-              <a href="https://github.com/web-doh/portfolio" class="project" id="mobile" target="blank">
-                <img src="imgs/projects/iphone.png" alt="iOS App" class="project__img">
-                <div class="project__description">
-                    <h3>iOS Application</h3>
-                    <span>Clone coding with JavaScript</span>
-                </div>
-            </a>
-            <a href="https://github.com/web-doh/portfolio" class="project" id="back-end" target="blank">
-                <img src="imgs/projects/macbook.png" alt="SPA" class="project__img">
-                <div class="project__description">
-                    <h3>Single Page Application</h3>
-                    <span>Clone coding with Ajax</span>
-                </div>
-            </a>
-            <a href="https://github.com/web-doh/portfolio" class="project" id="front-end" target="blank">
-                <img src="imgs/projects/1.png" alt="Responsive Web" class="project__img">
-                <div class="project__description">
-                    <h3>Responsive Web Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-        </div>
-    </section>
+      <div class="work__projects">
+        <a
+          href="https://github.com/web-doh/dwitter-client"
+          class="project"
+          id="practice"
+          target="_blank"
+        >
+          <img
+            src="imgs/projects/dwitter.png"
+            alt="dwitter image"
+            class="project__img"
+          />
+          <div class="project__description" title="Link to github repository">
+            <h3>Dwitter - client</h3>
+            <span>Clone coding with TypeScript, React, Redux</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/web-doh/dwitter-server"
+          class="project"
+          id="practice"
+          target="_blank"
+        >
+          <img
+            src="imgs/projects/dwitter.png"
+            alt="dwitter image"
+            class="project__img"
+          />
+          <div class="project__description" title="Link to github repository">
+            <h3>Dwitter - server</h3>
+            <span>Clone coding with TypeScript, Node.js, MySql</span>
+          </div>
+        </a>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-     <div class="section__container">
-        <h1>Testimonials</h1>
-        <h2>See what they say about me</h2>
-        <div class="testimonials">
-            <div class="testimonial">
-                <img src="imgs/testimonial/person.jpg" alt="person" class="testimonial__avatar" />
-                <div class="testimonial__speech-bubble">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minus!</p>
-                    <p class="name"><a href="">Ellie</a> / Samsung</p>
-                </div>
-            </div>
-            <div class="testimonial">
-                
-                <div class="testimonial__speech-bubble">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minus!</p>
-                    <p class="name"><a href="">Ellie</a> / Samsung</p>
-                </div>
-                <img src="imgs/testimonial/person.jpg" alt="person" class="testimonial__avatar" />
-            </div>
-        </div>
-        </div>
+        <a
+          href="https://github.com/web-doh/mmm"
+          class="project"
+          id="personal"
+          target="_blank"
+        >
+          <img
+            src="imgs/projects/mmm2.png"
+            alt="mmm image"
+            class="project__img"
+          />
+          <div class="project__description" title="Link to github repository">
+            <h3>My Material Manager</h3>
+            <span>Responsive Web Site <br />with React, Node.js, mongoDB</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/web-doh/beParents"
+          class="project"
+          id="team"
+          target="_blank"
+        >
+          <img
+            src="imgs/projects/beParents.png"
+            alt="beParents image"
+            class="project__img"
+          />
+          <div class="project__description" title="Link to github repository">
+            <h3>부모는 처음이라</h3>
+            <span>Responsive Web Site <br />with HTML, CSS, Javascript</span>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/web-doh/ts-practice"
+          class="project"
+          id="practice"
+          target="_blank"
+        >
+          <img
+            src="imgs/projects/mininote.png"
+            alt="ts practice image"
+            class="project__img"
+          />
+          <div class="project__description" title="Link to github repository">
+            <h3>Mini note</h3>
+            <span>Practice OOP with TypeScript</span>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/web-doh/1day-1js"
+          class="project"
+          id="practice"
+          target="_blank"
+        >
+          <img
+            src="imgs/projects/1day1js.png"
+            alt="practice image"
+            class="project__img"
+          />
+          <div class="project__description" title="Link to github repository">
+            <h3>1Day 1JS challenge</h3>
+            <span>Practice Vanilla JavaScript</span>
+          </div>
+        </a>
+      </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section">
-        <h1 class="contact__title">Let's talk</h1>
-        <a href="#" target="_blank"><h2 class="contact__email">podoh@kakao.com</h2></a>
-        <div class="contact__links">
-            <a href="https://github.com/web-doh/portfolio" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="#" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </div>
-        <p class="contact__rights">2020 Coding starter Doh - All rights reserved
-        </p>
+    <section id="contact" class="section section__container">
+      <h1 class="section__title">Contact</h1>
+      <a href="mailto:podoh@kakao.com" target="_blank"
+        ><h2 class="contact__email">podoh@kakao.com</h2></a
+      >
+      <div class="contact__links">
+        <a href="https://github.com/web-doh" target="_blank">
+          <i data-feather="github"></i>
+        </a>
+      </div>
+      <p class="contact__rights">2021 Kim dowon - All rights reserved</p>
     </section>
 
     <!-- Arrow button -->
- <button class="arrow-up">
-    <i class="fas fa-chevron-circle-up"></i>
-  </button>
-</body>
+    <button class="arrow-up">
+      <i id="chevon-up" data-feather="chevron-up"></i>
+      <i id="circle" data-feather="circle"></i>
+    </button>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
