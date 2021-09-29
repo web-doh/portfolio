@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -159,91 +159,203 @@
         <button class="category__btn" data-filter="practice">Practice</button>
       </div>
 
-      <div class="work__projects">
-        <a
-          href="https://github.com/web-doh/dwitter-client"
-          class="project"
-          id="practice"
-          target="_blank"
-        >
+      <ul class="work__projects">
+       
+        <li class="project" id="practice">
           <img
             src="imgs/projects/dwitter.png"
             alt="dwitter image"
             class="project__img"
           />
-          <div class="project__description" title="Link to github repository">
-            <h3>Dwitter - client</h3>
-            <span>Clone coding with TypeScript, React, Redux</span>
+          <div class="project__description">
+            <header class="project__header">
+              <h2>Dwitter - client</h2>
+              <span class="project__period">2021.07 - 2021.09</span>
+            </header>
+            <main class="project__content">
+              <p class="project__summary">
+                짧은 글을 실시간으로 주고 받을 수 있는 트위터의 기본 기능 클론
+                코딩
+              </p>
+              <div class="project__skillset">
+                <p>· 클라이언트 페이지 개발</p>
+                <p>· TS / React / Redux</p>
+              </div>
+            </main>
+            <footer class="project__links">
+              <a
+                class="project__link"
+                href="https://github.com/web-doh/dwitter-client"
+                target="_blank"
+                title="Link to github repository"
+                ><i data-feather="github"></i
+              ></a>
+              <a
+                class="project__link"
+                href="https://dwitter-doh.netlify.app"
+                target="_blank"
+                title="Link to deploy site"
+                ><i data-feather="link"></i
+              ></a>
+            </footer>
           </div>
-        </a>
-        <a
-          href="https://github.com/web-doh/dwitter-server"
-          class="project"
-          id="practice"
-          target="_blank"
-        >
+        </li>
+        <li class="project" id="practice">
           <img
             src="imgs/projects/dwitter.png"
             alt="dwitter image"
             class="project__img"
           />
-          <div class="project__description" title="Link to github repository">
-            <h3>Dwitter - server</h3>
-            <span>Clone coding with TypeScript, Node.js, MySql</span>
-          </div>
-        </a>
 
-        <a
-          href="https://github.com/web-doh/mmm"
-          class="project"
-          id="personal"
-          target="_blank"
-        >
+          <div class="project__description">
+            <header class="project__header">
+              <h2>Dwitter - server</h2>
+              <span class="project__period">2021.07 - 2021.09</span>
+            </header>
+            <main class="project__content">
+              <p class="project__summary">
+                짧은 글을 실시간으로 주고 받을 수 있는 트위터의 기본 기능 클론
+                코딩
+              </p>
+              <div class="project__skillset">
+                <p>· 서버 페이지 개발</p>
+                <p>· TS / Node.js / Express.js</p>
+              </div>
+            </main>
+            <footer class="project__links">
+              <a
+                class="project__link"
+                href="https://github.com/web-doh/dwitter-server"
+                target="_blank"
+                title="Link to github repository"
+                ><i data-feather="github"></i
+              ></a>
+              <a
+                class="project__link"
+                href="https://dwitter-doh.netlify.app"
+                target="_blank"
+                title="Link to deploy site"
+                ><i data-feather="link"></i
+              ></a>
+            </footer>
+          </div>
+        </li>
+
+        <li class="project" id="personal">
           <img
             src="imgs/projects/mmm2.png"
             alt="mmm image"
             class="project__img"
           />
-          <div class="project__description" title="Link to github repository">
-            <h3>My Material Manager</h3>
-            <span>Responsive Web Site <br />with React, Node.js, mongoDB</span>
+          <div class="project__description">
+            <header class="project__header">
+              <h2>MMM</h2>
+              <span class="project__period">2021.03 - 2021.04</span>
+            </header>
+            <main class="project__content">
+              <p class="project__summary">
+                My Materials Manager<br />인테리어 디자이너가 프로젝트에 사용한
+                자재들을 아카이빙하는 서비스
+              </p>
+              <div class="project__skillset">
+                <p>· 클라이언트 및 서버 페이지 개발</p>
+                <p>· React / Recoil / Node.js / mongoDB</p>
+              </div>
+            </main>
+            <footer class="project__links">
+              <a
+                class="project__link"
+                href="https://github.com/web-doh/mmm"
+                target="_blank"
+                title="Link to github repository"
+                ><i data-feather="github"></i
+              ></a>
+              <a
+                class="project__link"
+                href="https://my-materials-manager.netlify.app"
+                target="_blank"
+                title="Link to deploy site"
+                ><i data-feather="link"></i
+              ></a>
+            </footer>
           </div>
-        </a>
-        <a
-          href="https://github.com/web-doh/beParents"
-          class="project"
-          id="team"
-          target="_blank"
-        >
+        </li>
+        
+ <li class="project" id="team">
           <img
             src="imgs/projects/beParents.png"
             alt="beParents image"
             class="project__img"
           />
-          <div class="project__description" title="Link to github repository">
-            <h3>부모는 처음이라</h3>
-            <span>Responsive Web Site <br />with HTML, CSS, Javascript</span>
+          <div class="project__description">
+            <header class="project__header">
+              <h2>부모는 처음이라</h2>
+              <span class="project__period">2020.10 - 2020.12</span>
+            </header>
+            <main class="project__content">
+              <p class="project__summary">
+                전국 아동심리 상담 센터 정보를 확인할 수 있는 웹 어플리케이션
+              </p>
+              <div class="project__skillset">
+                <p>· 클라이언트 페이지 개발</p>
+                <p>· HTML / CSS / JS / Django 템플릿</p>
+              </div>
+            </main>
+            <footer class="project__links">
+              <a
+                class="project__link"
+                href="https://github.com/web-doh/beParents"
+                target="_blank"
+                title="Link to github repository"
+                ><i data-feather="github"></i
+              ></a>
+            </footer>
           </div>
-        </a>
-
-        <a
-          href="https://github.com/web-doh/ts-practice"
-          class="project"
-          id="practice"
-          target="_blank"
-        >
+        </li>
+        <li class="project" id="practice">
           <img
             src="imgs/projects/mininote.png"
             alt="ts practice image"
             class="project__img"
           />
           <div class="project__description" title="Link to github repository">
-            <h3>Mini note</h3>
+            <h2>Mini note</h2>
             <span>Practice OOP with TypeScript</span>
           </div>
-        </a>
+          <div class="project__description">
+            <header class="project__header">
+              <h2>Mini note</h2>
+              <span class="project__period">2021.04 - 2021.05</span>
+            </header>
+            <main class="project__content">
+              <p class="project__summary">
+                미니 노트를 만들면서 익히는 TypeScript와 OOP
+              </p>
+              <div class="project__skillset">
+                <p>· TypeScript와 OOP 연습</p>
+                <p>· TS</p>
+              </div>
+            </main>
+            <footer class="project__links">
+              <a
+                class="project__link"
+                href="https://github.com/web-doh/ts-practice"
+                target="_blank"
+                title="Link to github repository"
+                ><i data-feather="github"></i
+              ></a>
+              <a
+                class="project__link"
+                href="https://web-doh.github.io/ts-practice/"
+                target="_blank"
+                title="Link to deploy site"
+                ><i data-feather="link"></i
+              ></a>
+            </footer>
+          </div>
+        </li>
 
-        <a
+        <li
           href="https://github.com/web-doh/1day-1js"
           class="project"
           id="practice"
@@ -255,19 +367,47 @@
             class="project__img"
           />
           <div class="project__description" title="Link to github repository">
-            <h3>1Day 1JS challenge</h3>
-            <span>Practice Vanilla JavaScript</span>
-          </div>
-        </a>
-      </div>
+              
+          <div class="project__description">
+            <header class="project__header">
+              <h2>1Day 1JS challenge</h2>
+              <span class="project__period">2020.08 - 2020.10</span>
+            </header>
+            <main class="project__content">
+              <p class="project__summary">
+                하루에 하나, Vanilla JS 연습 챌린지
+              </p>
+              <div class="project__skillset">
+                <p>· Vanilla JS 연습</p>
+                <p>· JS</p>
+              </div>
+            </main>
+            <footer class="project__links">
+              <a
+                class="project__link"
+                href="https://github.com/web-doh/1day-1js"
+                target="_blank"
+                title="Link to github repository"
+                ><i data-feather="github"></i
+              ></a>
+              <a
+                class="project__link"
+                href="https://web-doh.github.io/1day-1js/"
+                target="_blank"
+                title="Link to deploy site"
+                ><i data-feather="link"></i
+              ></a>
+            </footer>
+        </li>
+      </ul>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="section section__container">
       <h1 class="section__title">Contact</h1>
-      <a href="mailto:podoh@kakao.com" target="_blank"
-        ><h2 class="contact__email">podoh@kakao.com</h2></a
-      >
+      <li href="mailto:podoh@kakao.com" target="_blank">
+        <h2 class="contact__email">podoh@kakao.com</h2>
+      </li>
       <div class="contact__links">
         <a href="https://github.com/web-doh" target="_blank">
           <i data-feather="github"></i>
