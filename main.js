@@ -69,6 +69,13 @@ workCategories.addEventListener("click", (event) => {
     return;
   }
 
+  //Remove selection from the previous one & select the new one
+  const active = document.querySelector(".category__btn.selected");
+  active.classList.remove("selected");
+  const target =
+    event.target.nodeName === "BUTTON" ? event.target : event.target.parentNode;
+  target.classList.add("selected");
+
   //Animation
   projectsContainer.classList.add("anim__effect");
   setTimeout(() => {
